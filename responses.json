@@ -1,0 +1,62 @@
+[
+    {
+        "question_number": 1,
+        "question": "What is an operating system?",
+        "answer": "### In a nutshell\nAn **operating system (OS)** is the foundational software that sits between the computer’s hardware and the applications that run on it. It manages the computer’s resources—CPU time, memory, storage, and I/O devices—so that multiple programs can run efficiently, safely, and in a predictable way.\n\n---\n\n## Core Responsibilities\n\n| Area | What the OS does |\n|------|------------------|\n| **Process Management** | Creates, schedules, and terminates processes (running programs). Handles multitasking and ensures that each process gets CPU time without interfering with others. |\n| **Memory Management** | Allocates RAM to programs, keeps track of what memory is in use, and protects processes from corrupting each other’s memory. Implements virtual memory (paging, swapping) to make programs think they have more RAM than physically available. |\n| **File System & Storage** | Provides a hierarchy of"
+    },
+    {
+        "question_number": 2,
+        "question": "What is the OSI model?",
+        "answer": "**The OSI Model (Open Systems Interconnection Model)**\n\nThe OSI model is a conceptual framework developed by the International Organization for Standardization (ISO) to standardize the functions of a telecommunication or computing system into seven distinct layers. Its primary purpose is to enable interoperability between diverse networking hardware and software, by clearly defining how data travels from one device to another.\n\n| Layer | Number | Function / Responsibility | Typical Protocols |\n|-------|--------|--------------------------|-------------------|\n| **Application** | 7 | Interface for user applications; provides network services to applications (e.g., email, file transfer). | HTTP, FTP, SMTP, DNS, Telnet |\n| **Presentation** | 6 | Transforms data into a format the application can understand; handles encryption, compression, and translation. | TLS/SSL, JPEG, MPEG, ASCII ↔ EBCDIC |\n| **Session** | 5 | Manages sessions or connections between applications, handling start, maintain, and close of communication. | NetBIOS, RPC, SQL, PPTP |\n| **Transport** | 4 | Ensures reliable, error‑free delivery"
+    },
+    {
+        "question_number": 3,
+        "question": "Who was Alan Turing?",
+        "answer": "**Alan Turing (1912 – 1954)** was a British mathematician, logician, and pioneering computer scientist whose ideas laid the foundation for modern computing and artificial intelligence.\n\n| What he did | Why it matters |\n|------------|----------------|\n| **Turing Machine (1936)** | A simple mathematical model that can simulate any algorithm. It became the theoretical basis for all digital computers. |\n| **Enigma code‑breaking (1940‑1945)** | While working at Bletchley Park, he helped design the Bombe, a machine that broke Nazi Germany’s Enigma cipher. His work is credited with shortening WWII by up to two years. |\n| **Turing Test ("
+    },
+    {
+        "question_number": 4,
+        "question": "How do computer networks work?",
+        "answer": "## Short answer  \nA computer network is a collection of connected devices (computers, phones, printers, servers, etc.) that exchange information by sending bits over some physical medium (copper wire, fiber‑optic cable, air, etc.).  The network is governed by a set of rules—**protocols**—that decide how the bits are framed, addressed, routed, error‑checked, and ultimately presented to the user.  \n\n---\n\n## 1.  The “What” – Why we build networks  \n\n| Goal | Typical Example |\n|------|-----------------|\n| **Resource sharing** | Print a document from any PC in a LAN |\n| **Data sharing** | Store photos in a cloud service |\n| **Communication** | Email, video‑chat, VoIP |\n| **Scalability & redundancy** | Data centers with load balancers |\n\n---\n\n## 2.  The “How” – Basic components  \n\n|"
+    },
+    {
+        "question_number": 5,
+        "question": "What is the Linux Kernel?",
+        "answer": "## The Linux Kernel – The Heart of Linux\n\n### 1.  What is a Kernel?\n\nA **kernel** is the core program that runs at the lowest level in a computer’s operating system. It:\n\n| Responsibility | What it does |\n|-----------------|--------------|\n| **Process scheduling** | Decides which program runs when and for how long. |\n| **Memory management** | Allocates RAM, swaps to disk, protects processes from each other. |\n| **Device I/O** | Talks"
+    },
+    {
+        "question_number": 6,
+        "question": "What is a File system?",
+        "answer": "A **file system** is the method and data structures that an operating system uses to store, retrieve, and manage files on a storage device (like a hard drive, SSD, USB stick, or SD card). It’s the “file‑level” layer that sits between your applications and the raw disk hardware.\n\n### What a file system does\n\n| Task | What it means |\n|------|----------------|\n| **Organization** | Keeps files in directories (folders) that form a tree or hierarchy, making them easier to locate. |\n| **Naming** | Assigns a unique name (and sometimes a path) to each file or directory. |\n| **Metadata** | Stores attributes such as size, creation/modification timestamps, permissions, and ownership. |\n| **Allocation** | Keeps track of which parts of the disk are free and which are used by which file. |\n| **Access Control** | Enforces permissions, encryption, or other security settings. |\n| **Reliability** | Handles errors, recovery, and sometimes"
+    },
+    {
+        "question_number": 7,
+        "question": "What is Docker?",
+        "answer": "**Docker** is a platform and set of tools for building, running, and sharing applications packaged in lightweight, portable containers. It allows developers to bundle an application with all of its dependencies (libraries, configuration files, environment variables, etc.) into a single executable unit that can run consistently across any environment that supports Docker.\n\n---\n\n### Core Ideas\n\n| Concept | What it is | Why it matters |\n|--------|------------|----------------|\n| **Container** | An isolated process environment that shares the host OS kernel but has its own filesystem, network, and process namespace. | Fast start‑up (seconds), minimal overhead, consistent runtime. |\n| **Image** | A read‑only template that contains everything needed to run a container (OS, libraries, app code, runtime). | Images are versioned, reproducible, and can be stored in registries. |\n| **Dockerfile** | A declarative script that describes how to build an image (base OS, copy files, install packages, set environment variables, expose ports, etc.). | Automates image creation; ensures reproducibility. |\n| **Docker Hub / Registry** | Centralized storage for images that can be pulled/pushed"
+    },
+    {
+        "question_number": 8,
+        "question": "What is a GPU and how is it different from a CPU?",
+        "answer": "**GPU (Graphics Processing Unit)**  \n- **Purpose:** Originally designed to accelerate the rendering of 2‑D/3‑D graphics for video games, CAD, and multimedia.  \n- **Architecture:** Thousands of lightweight cores that work together on the same operation (SIMD – Single Instruction, Multiple Data).  \n- **Memory:** Has its own high‑bandwidth memory called VRAM (Video RAM) that is tightly coupled to the GPU cores.  \n- **Programming model:** Exposed to developers through APIs"
+    },
+    {
+        "question_number": 9,
+        "question": "What are the layers of the OSI model?",
+        "answer": "**OSI Model – 7 Layers (from lowest to highest)**  \n\n| Layer | Number | Typical Function(s) | Common Protocols / Examples |\n|-------|--------|---------------------|----------------------------|\n| **Physical** | 1 | Transmits raw bit streams over a physical medium. Handles voltage, timing, cable, connector, etc. | Ethernet cables, fiber optics, USB, RS‑232 |\n| **Data Link** | 2 | Provides node‑to‑node data transfer, framing, error detection/correction, flow control, and media access control. | Ethernet (MAC), PPP, Switches, Wi‑Fi (802.11) |\n| **Network** | 3 | Routes packets across multiple networks, determines logical addressing (IP), and handles fragmentation. | IP, ICMP, IPsec, OSPF, BGP |\n| **Transport** | 4 | Offers end‑to‑"
+    },
+    {
+        "question_number": 10,
+        "question": "What is BeeGFS?",
+        "answer": "**BeeGFS (formerly known as FhGFS)** is a high‑performance, parallel file‑system designed to deliver fast, scalable storage for scientific, engineering, and enterprise workloads. It follows a *client‑server* architecture where multiple clients can simultaneously read from or write to a single logical file, while the underlying storage is distributed across a cluster of commodity servers (called **storage nodes**).  \n\n---\n\n## Core Concepts\n\n| Concept | Description |\n|---------|-------------|\n| **Clients** | Nodes that run the BeeGFS client library. Applications read/write files through the standard POSIX API. |\n| **Meta‑Data Nodes** | Dedicated servers that hold directory information (file names, paths, permissions, file attributes) and coordinate I/O operations. |\n| **Storage Nodes** | Servers that store the actual file blocks. BeeGFS stripes file data across multiple nodes to parallelise access. |\n| **Balancer** | Optional daemon that redistributes data to keep the cluster balanced when nodes are added or removed. |\n| **Web UI / CLI** | Tools for managing the system, monitoring usage, and configuring policies. |\n\n---\n\n## Architecture & How It Works\n\n1. **File Creation** – When a client creates a file, the meta‑data node"
+    },
+    {
+        "question_number": 11,
+        "question": "What are the various components that comprise a computer?",
+        "answer": "### The “parts” of a computer – a quick‑reference guide\n\n| Category | Component | Why it matters | Typical variants |\n|----------|-----------|----------------|------------------|\n| **Central Processing Unit (CPU)** | The brain that executes instructions. | Controls data flow, performs calculations. | x86 /"
+    },
+    {
+        "question_number": 12,
+        "question": "What is Federated Learning?",
+        "answer": "## Federated Learning (FL) – The Big Picture\n\n| Aspect | What it means |\n|--------|---------------|\n| **Goal** | Train a shared machine‑learning model **without moving raw data** from the devices or sites that generate it. |\n| **Typical setting** | Thousands‑to‑millions of edge devices (phones, wearables, IoT sensors, etc.) or distributed data centers. |\n| **Why it matters** | • Privacy‑preserving: raw data never leaves the device. <br>• Regulatory compliance (GDPR, HIPAA, etc.). <br>• Reduced network traffic & bandwidth costs. <br>• Leverages diverse, non‑IID data to build robust models. |\n\n---\n\n## How Federated Learning Works (in a nutshell)\n\n1. **Central server (or orchestrator)**  \n   • Holds the *global* model parameters (weights, biases).  \n   • Distributes the current global model to selected devices.\n\n2. **Local training on devices**  \n   • Each device trains the received model on its *local* data (often for a few epochs).  \n   • The device"
+    }
+]
